@@ -1,0 +1,517 @@
+/* tools */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  height: auto;
+  min-height: 100%;
+  line-height: 1; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif; }
+
+code {
+  padding: 0;
+  background: transparent;
+  border: 0; }
+
+.notepad-parallax-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+
+header, main, footer {
+  position: relative;
+  z-index: 1; }
+
+.animated-post {
+  background: transparent; }
+
+.notepad-blog-menu {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0.9375rem;
+  float: right;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 2.625rem;
+  height: 5rem; }
+  .notepad-blog-menu .notepad-mobile-menu a {
+    display: inline-block;
+    outline: none;
+    color: #000;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem; }
+    .notepad-blog-menu .notepad-mobile-menu a:hover {
+      color: #000; }
+  .notepad-blog-menu ul {
+    background: #000;
+    position: absolute;
+    width: 100%;
+    -webkit-transform: translate3d(0, -110%, 0);
+    -ms-transform: translate3d(0, -110%, 0);
+    -moz-transform: translate3d(0, -110%, 0);
+    -o-transform: translate3d(0, -110%, 0);
+    transform: translate3d(0, -110%, 0);
+    top: 0;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    -webkit-transition: -webkit-transform .3s;
+    transition: transform .3s;
+    padding-top: 0;
+    padding-bottom: 3.125rem; }
+    .notepad-blog-menu ul li {
+      display: block;
+      margin: 0;
+      width: 100%;
+      font-size: 2.25rem;
+      text-align: center;
+      padding: 0.3125rem; }
+      .notepad-blog-menu ul li a {
+        color: #ffffff;
+        display: block;
+        width: 100%;
+        height: 100%;
+        outline: none; }
+      .notepad-blog-menu ul li.notepad-mobile-close-btn {
+        padding-right: 1.25rem; }
+        .notepad-blog-menu ul li.notepad-mobile-close-btn a {
+          color: #ffffff; }
+    .notepad-blog-menu ul.opened {
+      -webkit-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0); }
+  @media only screen and (min-width: 40.063em) {
+    .notepad-blog-menu {
+      padding-top: 1.75rem;
+      padding-bottom: 1.5625rem;
+      font-size: 1rem; }
+      .notepad-blog-menu ul {
+        background: transparent;
+        position: relative;
+        width: auto;
+        list-style-type: none;
+        margin: 0;
+        width: auto;
+        overflow: auto;
+        -webkit-transform: none;
+        -ms-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+        transform: none;
+        visibility: visible;
+        padding-top: 0;
+        padding-bottom: 0; }
+        .notepad-blog-menu ul li {
+          display: inline-block;
+          margin-left: 1.25rem;
+          width: auto;
+          font-size: 1rem;
+          text-align: left;
+          padding: 0; }
+          .notepad-blog-menu ul li a {
+            color: #000;
+            display: inline-block;
+            border-bottom: 0.1875rem solid transparent;
+            width: auto;
+            height: auto; }
+            .notepad-blog-menu ul li a:hover {
+              border-bottom: 0.1875rem solid #e51843; } }
+
+.notepad-site-head .notepad-site-head-menu {
+  background: #ffffff; }
+  .notepad-site-head .notepad-site-head-menu .notepad-blog-logo {
+    display: inline-block;
+    max-height: 5rem; }
+    .notepad-site-head .notepad-site-head-menu .notepad-blog-logo img {
+      max-height: 5rem; }
+  .notepad-site-head .notepad-site-head-menu .title {
+    display: inline-block;
+    padding: 0;
+    padding-left: 1.25rem;
+    height: 5rem;
+    line-height: 5rem;
+    vertical-align: middle;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.625rem;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: -0.0625rem; }
+    .notepad-site-head .notepad-site-head-menu .title a {
+      color: #000; }
+      .notepad-site-head .notepad-site-head-menu .title a:hover {
+        color: #000; }
+.notepad-site-head .notepad-site-head-content {
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+  background-size: cover; }
+  .notepad-site-head .notepad-site-head-content.with-bg-cover {
+    background-color: rgba(0, 0, 0, 0.3); }
+  .notepad-site-head .notepad-site-head-content .notepad-site-head-title-bg {
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    background: #e51843;
+    line-height: 1.1; }
+  .notepad-site-head .notepad-site-head-content h1, .notepad-site-head .notepad-site-head-content h2 {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-transform: uppercase; }
+  .notepad-site-head .notepad-site-head-content h1 {
+    padding-top: 4.375rem;
+    font-size: 0.875rem;
+    margin-bottom: 0.9375rem; }
+    .notepad-site-head .notepad-site-head-content h1 a {
+      color: #ffffff; }
+      .notepad-site-head .notepad-site-head-content h1 a:hover, .notepad-site-head .notepad-site-head-content h1 a:focus, .notepad-site-head .notepad-site-head-content h1 a:active {
+        color: #ffffff; }
+    .notepad-site-head .notepad-site-head-content h1 .fa {
+      margin-left: 0.3125rem; }
+  .notepad-site-head .notepad-site-head-content h2 {
+    font-size: 2.5rem;
+    padding-bottom: 5rem;
+    font-weight: 700;
+    line-height: 1.3; }
+  @media only screen and (min-width: 40.063em) {
+    .notepad-site-head .notepad-site-head-content h1 {
+      padding-top: 7.5rem;
+      font-size: 1rem; }
+    .notepad-site-head .notepad-site-head-content h2 {
+      font-size: 3.75rem;
+      padding-bottom: 7.5rem;
+      font-weight: 700; } }
+  @media only screen and (min-width: 70em) {
+    .notepad-site-head .notepad-site-head-content h1 {
+      padding-top: 9.375rem;
+      font-size: 1rem; }
+    .notepad-site-head .notepad-site-head-content h2 {
+      font-size: 4.375rem;
+      padding-bottom: 9.375rem;
+      font-weight: 700; } }
+  @media only screen and (min-width: 90em) {
+    .notepad-site-head .notepad-site-head-content h1 {
+      padding-top: 10.3125rem; }
+    .notepad-site-head .notepad-site-head-content h2 {
+      font-size: 5rem;
+      padding-bottom: 10.3125rem; } }
+  @media only screen and (min-width: 100em) {
+    .notepad-site-head .notepad-site-head-content h1 {
+      padding-top: 12.5rem; }
+    .notepad-site-head .notepad-site-head-content h2 {
+      font-size: 6.25rem;
+      padding-bottom: 12.5rem; } }
+
+.post-loop-animations .animated-post {
+  visibility: hidden; }
+
+.notepad-content {
+  background: #ffffff; }
+  .notepad-content .notepad-index-post {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 0.0625rem solid #d9d9d9; }
+    .notepad-content .notepad-index-post:first-of-type {
+      padding-top: 5rem; }
+    .notepad-content .notepad-index-post .datetime {
+      margin-bottom: 2.5rem; }
+    @media only screen and (min-width: 40.063em) {
+      .notepad-content .notepad-index-post {
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem; }
+        .notepad-content .notepad-index-post:first-of-type {
+          padding-top: 7.5rem; }
+        .notepad-content .notepad-index-post .datetime {
+          margin-bottom: 0; } }
+    .notepad-content .notepad-index-post .notepad-post-meta {
+      display: block;
+      text-align: center; }
+      .notepad-content .notepad-index-post .notepad-post-meta .day {
+        display: block;
+        font-size: 3.25rem;
+        font-weight: 800;
+        color: #e51843;
+        font-family: "Montserrat", sans-serif; }
+      .notepad-content .notepad-index-post .notepad-post-meta .month-year {
+        display: block;
+        font-size: 1rem;
+        color: #000;
+        font-size: 0.875rem;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase; }
+    .notepad-content .notepad-index-post .notepad-post-header .notepad-post-title {
+      color: #000;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1.625rem;
+      margin: 0;
+      padding: 0;
+      line-height: 1.1; }
+      .notepad-content .notepad-index-post .notepad-post-header .notepad-post-title a {
+        color: #000; }
+    @media only screen and (min-width: 40.063em) {
+      .notepad-content .notepad-index-post .notepad-post-header .notepad-post-title {
+        text-align: left;
+        font-size: 2.125rem;
+        margin-bottom: 0.9375rem; } }
+    .notepad-content .notepad-index-post .notepad-post-excerpt {
+      color: #000;
+      font-size: 1.375rem;
+      margin-top: 0.625rem;
+      text-align: center; }
+      .notepad-content .notepad-index-post .notepad-post-excerpt p {
+        margin: 0;
+        font-size: 1.375rem; }
+    @media only screen and (min-width: 40.063em) {
+      .notepad-content .notepad-index-post .notepad-post-excerpt {
+        text-align: left; } }
+    .notepad-content .notepad-index-post .notepad-index-post-author {
+      padding-top: 0.625rem;
+      padding-bottom: 0.625rem;
+      text-align: center;
+      color: #666666;
+      font-size: 0.875rem;
+      line-height: 2.125rem; }
+      .notepad-content .notepad-index-post .notepad-index-post-author a {
+        color: #666666;
+        -webkit-transition: color .3s;
+        transition: color .3s; }
+        .notepad-content .notepad-index-post .notepad-index-post-author a:hover, .notepad-content .notepad-index-post .notepad-index-post-author a:active, .notepad-content .notepad-index-post .notepad-index-post-author a:focus {
+          color: #e51843; }
+      .notepad-content .notepad-index-post .notepad-index-post-author .notepad-index-post-author-thumb {
+        width: 2.1875rem;
+        height: 2.1875rem;
+        border-radius: 100%;
+        margin-right: 0.5rem; }
+      @media only screen and (min-width: 40.063em) {
+        .notepad-content .notepad-index-post .notepad-index-post-author {
+          text-align: left; }
+          .notepad-content .notepad-index-post .notepad-index-post-author .notepad-index-post-author-thumb {
+            float: left; } }
+    .notepad-content .notepad-index-post .notepad-post-read-more {
+      display: block;
+      text-align: center;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1.5625rem;
+      font-size: 0.8125rem;
+      color: #ffffff;
+      background-color: #000;
+      font-weight: 600;
+      padding: 0.625rem 2.5rem;
+      text-transform: uppercase;
+      -webkit-transition: background-color .3s;
+      transition: background-color .3s;
+      width: 60%;
+      border-radius: 0.125rem; }
+      .notepad-content .notepad-index-post .notepad-post-read-more:hover {
+        background-color: #e51843; }
+    @media only screen and (min-width: 40.063em) {
+      .notepad-content .notepad-index-post .notepad-post-read-more {
+        width: auto;
+        float: left;
+        margin-left: 0;
+        margin-right: 0.3125rem; } }
+
+.notepad-author-head-content {
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+  background-size: cover; }
+  .notepad-author-head-content .notepad-site-head-title-bg {
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    background: #e51843;
+    line-height: 1.1; }
+  .notepad-author-head-content h1, .notepad-author-head-content h2 {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-transform: uppercase; }
+  .notepad-author-head-content h1 {
+    padding-top: 4.375rem;
+    font-size: 0.875rem;
+    margin-bottom: 0.9375rem; }
+    .notepad-author-head-content h1 a {
+      color: #ffffff; }
+      .notepad-author-head-content h1 a:hover, .notepad-author-head-content h1 a:focus, .notepad-author-head-content h1 a:active {
+        color: #ffffff; }
+    .notepad-author-head-content h1 .fa {
+      margin-left: 0.3125rem; }
+  .notepad-author-head-content h2 {
+    font-size: 2.5rem;
+    padding-bottom: 5rem;
+    font-weight: 700;
+    line-height: 1.3; }
+  @media only screen and (min-width: 40.063em) {
+    .notepad-author-head-content h1 {
+      font-size: 1rem; }
+    .notepad-author-head-content h2 {
+      font-size: 3.75rem; } }
+  .notepad-author-head-content .notepad-author-page-avatar {
+    text-align: center;
+    padding-bottom: 1.875rem; }
+    .notepad-author-head-content .notepad-author-page-avatar img {
+      width: 9.375rem;
+      height: 9.375rem;
+      border-radius: 100%; }
+    @media only screen and (min-width: 40.063em) {
+      .notepad-author-head-content .notepad-author-page-avatar img {
+        width: 11.25rem;
+        height: 11.25rem; } }
+
+nav.pagination {
+  padding-top: 5.625rem;
+  padding-bottom: 5.625rem;
+  text-align: center; }
+  nav.pagination .newer-posts,
+  nav.pagination .older-posts,
+  nav.pagination .page-number {
+    font-size: 0.875rem;
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.1875rem;
+    color: #000;
+    border: 0.125rem solid #000; }
+  nav.pagination .newer-posts:hover,
+  nav.pagination .older-posts:hover {
+    border: 0.125rem solid #e51843;
+    color: #e51843; }
+  nav.pagination .newer-posts.faded,
+  nav.pagination .older-posts.faded {
+    color: gray;
+    border: 0.125rem solid gray; }
+    nav.pagination .newer-posts.faded a,
+    nav.pagination .older-posts.faded a {
+      color: gray; }
+  nav.pagination .newer-posts .fa {
+    margin-right: 0.625rem; }
+  nav.pagination .older-posts .fa {
+    margin-left: 0.625rem; }
+
+.notepad-site-footer {
+  background: #000; }
+  .notepad-site-footer.with-bg-cover {
+    background-color: rgba(0, 0, 0, 0.7); }
+  .notepad-site-footer .social-icons,
+  .notepad-site-footer .copyright {
+    width: 100%;
+    padding: 0;
+    text-align: center; }
+  .notepad-site-footer .copyright {
+    color: #ffffff;
+    float: none;
+    text-align: center;
+    font-size: 0.8125rem;
+    padding-top: 3.75rem;
+    padding-bottom: 1.25rem; }
+    .notepad-site-footer .copyright a {
+      color: #ffffff; }
+  .notepad-site-footer .social-icons {
+    text-align: center;
+    float: none;
+    padding-bottom: 3.75rem; }
+    .notepad-site-footer .social-icons a {
+      color: #000; }
+  @media only screen and (min-width: 70em) {
+    .notepad-site-footer .social-icons,
+    .notepad-site-footer .copyright {
+      width: 49%;
+      padding: 5rem; }
+    .notepad-site-footer .copyright {
+      text-align: left;
+      float: left; }
+    .notepad-site-footer .social-icons {
+      text-align: right;
+      float: right; } }
+
+.fadeInDown {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  visibility: visible !important; }
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); } }
+.tag-template .notepad-index-post:first-of-type {
+  padding-top: 3.125rem; }
+  @media only screen and (min-width: 40.063em) {
+    .tag-template .notepad-index-post:first-of-type {
+      padding-top: 4.6875rem; } }
+
+.notepad-tags-container {
+  background-color: #f2f2f2;
+  position: relative;
+  z-index: 1; }
+  .notepad-tags-container.with-bg-cover {
+    background-color: rgba(255, 255, 255, 0.8); }
+  .notepad-tags-container .notepad-tags-header {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    color: #000;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    text-align: center; }
+    .notepad-tags-container .notepad-tags-header .tag-name {
+      color: #e51843;
+      text-transform: none; }
+    @media only screen and (min-width: 40.063em) {
+      .notepad-tags-container .notepad-tags-header {
+        font-size: 1.5625rem; } }
+
+.tags-loop .tag-link {
+  position: relative;
+  display: inline-block;
+  margin-right: 0.625rem; }
+  .tags-loop .tag-link:after {
+    content: ',';
+    display: inline-block;
+    position: absolute;
+    right: -0.25rem;
+    bottom: 0; }
+  .tags-loop .tag-link:last-child:after {
+    display: none; }

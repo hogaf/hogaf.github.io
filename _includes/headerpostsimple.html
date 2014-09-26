@@ -1,0 +1,20 @@
+    <main id="notepad-post-container-simple" class="notepad-post-container-simple" role="main">
+        <header class="notepad-post-header-simple">
+            <div class="notepad-post-menu-header-simple">
+                
+                {% include logo.html %}
+
+
+{% include navigation.html %}
+ <div class="clearfix"></div>
+            </div>
+            <div class="notepad-post-title-simple row">
+                <div class="small-12 columns">
+                    <div class="notepad-post-meta-simple">
+                        <h1>{% if page.featured %}<i class="fa fa-star-half-o fa-spin"></i>&nbsp;{% endif %}{{ page.title }}</h1>
+                        <p class="meta">{% include post-meta.html %}</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </main>

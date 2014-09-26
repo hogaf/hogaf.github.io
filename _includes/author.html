@@ -1,0 +1,22 @@
+        {% if site.author_bg %}<div class="notepad-author-info" style="background-image: url({{ site.url }}/images/headers/{{ site.author_bg }})">
+            <div class="bg-opacity"></div>{% elsif site.header_bg %}<div class="notepad-author-info" style="background-image: url({{ site.url }}/images/headers/{{ site.header_bg }})">
+            <div class="bg-opacity"></div>{% else %}<div class="notepad-author-info">{% endif %}
+            <div class="row">
+                <section class="notepad-post-author small-12 columns">
+                        
+                    {% if site.owner.avatar %}
+                    <img src="{{ site.url }}/images/avatars/{{ site.owner.avatar }}" class="notepad-post-author-avatar" alt="{{ site.owner.nickname }}">
+                    {% endif %}
+                    
+                        <span class="author-label">Author</span>
+                        <h1><a href="{{ site.url }}/author/{{ site.owner.nickname }}" class="author-link-name">{{ site.owner.nickname }}</a></h1>
+                    
+                        {% comment %}
+                        <p><a href="mailto:{{ site.owner.email }}" class="author-email">{{ site.owner.email }}</a></p>
+                        {% endcomment %}
+                    
+                        <p>{{ site.owner.description }}</p>
+                    
+                </section>
+            </div>
+        </div>

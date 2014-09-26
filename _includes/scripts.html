@@ -1,0 +1,32 @@
+<script src="{{ site.url }}/assets/js/vendor/jquery-1.11.1.min.js"></script>
+<script>var twitterAccount = "hogaff";</script>
+<div class="shareTooltip" id="shareTooltip">
+    <div class="tooltipContainer"><a id="sendToTwitter" href="" class="sharingLink twitter"><span></span></a></div>
+</div>
+<script>!function (f, a, g) { var e, b = f.getElementsByTagName(a)[0], c = /^http:/.test(f.location) ? "http" : "https"; if (!f.getElementById(g)) { e = f.createElement(a); e.id = g; e.src = c + ":/assets/js/vendor/twitter.js"; b.parentNode.insertBefore(e, b) } }(document, "script", "twitter-wjs");</script>
+
+<script src="{{ site.url }}/assets/js/vendor/fastclick.js"></script>
+<script src="{{ site.url }}/assets/js/vendor/foundation.min.js"></script>
+    {% if page.imagefeature %}
+<script src="{{ site.url }}/assets/js/vendor/background-check.js"></script>
+<script src="{{ site.url }}/assets/js/vendor/post-header-animations.js"></script>{% endif %}
+<script src="{{ site.url }}/assets/js/notepad.js"></script>
+<script src="{{ site.url }}/assets/js/scripts.min.js"></script>
+<script src="{{ site.url }}/assets/js/vendor/selectshare.js"></script>
+    {% if site.nprogress %}
+<script src="{{ site.url }}/assets/js/vendor/nprogress.js"></script>{% endif %}
+<script type='text/javascript'>
+    $(document).ready(function () {
+        $(".time").text(function (index, value) {
+            return Math.round(parseFloat(value));
+        });
+        $(".hour").text(function (index, value) {
+            return Math.floor(parseFloat(value));
+        });
+    });
+</script>
+{% if site.google_analytics %}
+<script>(function (d, e, j, h, f, c, b) { d.GoogleAnalyticsObject = f; d[f] = d[f] || function () { (d[f].q = d[f].q || []).push(arguments) }, d[f].l = 1 * new Date(); c = e.createElement(j), b = e.getElementsByTagName(j)[0]; c.async = 1; c.src = h; b.parentNode.insertBefore(c, b) })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"); ga("create", "{{ site.google_analytics }}", "auto"); ga("require", "displayfeatures"); ga("send", "pageview");</script>
+{% endif %}
+{% if site.nprogress %}
+<script>NProgress.start(); var interval = setInterval(function () { NProgress.inc() }, 1000); jQuery(window).load(function () { clearInterval(interval); NProgress.done() }); jQuery(window).unload(function () { NProgress.start() });</script>{% endif %}

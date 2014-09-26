@@ -1,0 +1,13 @@
+<!doctype html>
+<html class="no-js" lang="en">
+{% include head.html %}
+<body class="home-template">
+    {% if site.header_bg %}<div class="notepad-parallax-background" style="background-color: black"></div>{% endif %}
+{% include headerhome.html %}
+<main class="notepad-content post-loop-animations" role="main">
+{{ content }}
+</main>
+{% include footer.html %}
+{% include scripts.html %}
+</body>
+</html>

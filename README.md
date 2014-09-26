@@ -1,4 +1,3 @@
-abdotleader.github.io
-=====================
+My Personal Blog
 
-My Blog
+I'm using [Notepad](https://github.com/hmfaysal/Notepad) as my Jekyll theme.

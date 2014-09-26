@@ -1,0 +1,200 @@
+title:            hogaf
+description:      "Blog"
+locale:           en_US
+logo:             logo.png
+disqus_shortname: abdolghafar
+share:            true
+readtime:		  false
+wpm:			  #
+dropcap:		  true
+theme:			  blue
+nprogress:        true
+header_bg:        newyork-streets.jpg
+author_bg:		  newyork.jpg
+# Change url to your domain. Leave localhost server or blank when working locally.
+# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
+# whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
+url:              ' '
+
+# Owner/author information
+owner:
+  name:           Hossein Abdolghafar
+  nickname:       hogaf
+  avatar:         #
+  email:          hossein.abdolghafar@gmail.com
+  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
+  description:    I'm a Senior .Net Developer, Consultant who currently lives in Tehran, Iran.
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        hogaff
+  facebook:       #
+  github:         hogaf      
+  instagram:      #
+  linkedin:       http://ir.linkedin.com/pub/hossein-abdolghafar/83/281/b76/
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:    112331233999808226193
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   UA-54743027-1
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:         
+
+# Links to include in footer navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+    external: false
+    icon: home
+  - title: Featured Posts
+    url: /featured
+  - title: Categories
+    url: /categories
+  - title: About
+    url: /about
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Asia/Tehran
+future:      true
+highlighter: rouge
+markdown:    kramdown
+paginate:    5
+paginate_path: "page:num"
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /archive/:year/:month/:day/:title
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_line_numbers: 
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+prose:
+  siteurl: 'http://hogaf.github.io/'
+  relativeLinks: 'http://hogaf.github.io/links.jsonp'
+  media: 'images/post'
+  metadata:
+    _posts:
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: "true"
+      - name: "layout"
+        field:
+          element: "hidden"
+          label: "Layout"
+          value: "post"
+      - name: "title"
+        field:
+          label: "Title"
+          element: "text"
+          value: "An Awesome Headline!"
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
+          placeholder: "Enter Post Description"
+      - name: "modified"
+        field:
+          element: "text"
+          label: "Has this page been modified?"
+          placeholder: "YYYY-MM-DD"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Add categories"
+          placeholder: "Choose categories"
+          value: personal
+          options:
+            - name: "Personal"
+              value: personal
+            - name: "Engineering"
+              value: engineering
+            - name: "Web-Development"
+              value: webdevelopment
+          alterable: true
+      - name: "tags"
+        field:
+          element: "text"
+          label: "Tags"
+          placeholder: "Enter tags, separated by spaces"
+      - name: "imagefeature"
+        field:
+          element: "text"
+          label: "Featured Image"
+          placeholder: "somefile.jpg"
+      - name: "covereffect"
+        field:
+          element: "select"
+          label: "Select Cover Effect"
+          placeholder: "Choose Type"
+          value:
+          options:
+            - name: "None"
+              value: 
+            - name: "slice"
+              value: slice
+            - name: "push"
+              value: push
+      - name: "location"
+        field:
+          element: "text"
+          label: "Location"
+          placeholder: "Some Place"
+      - name: "locationgps"
+        field:
+          element: "text"
+          label: "Location GPS point"
+          placeholder: "long, lat"
+      - name: "mathjax"
+        field:
+          element: "checkbox"
+          label: "MathJax"
+          value: false
+      - name: "featured"
+        field:
+          element: "checkbox"
+          label: "Featured?"
+          value: false
+      - name: "comments"
+        field:
+          element: "checkbox"
+          label: "Comments"
+          value: false
+      - name: "chart"
+        field:
+          element: "checkbox"
+          label: "Chart?"
+          value: false
+      - name: "charttype"
+        field:
+          element: "select"
+          label: "Select Chart Type"
+          placeholder: "Choose Type"
+          value:
+          options:
+            - name: "None"
+              value: 
+            - name: "pie"
+              value: pie
+            - name: "serial"
+              value: serial
+      - name: "jquery"
+        field:
+          element: "checkbox"
+          label: "Require JQuery?"
+          value: false
+
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
