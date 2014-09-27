@@ -22,6 +22,6 @@ After all I have managed to create my own blog. I'll share my thought and experi
 through out this blog.
 
 As you may have noticed I'm using jekyll and later I will discuss a lot about why 
-I have decided to use jekyll and what was my requirements. 
+I have decided to use it and what was my requirements. 
 
 >This blog post gonna get modified very soon.

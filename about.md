@@ -36,9 +36,10 @@ Currently there are [{{ statuscount }} status messages.]({{ site.url }}/status-u
 <div class="chart" id="chartdiv" style="width: 100%; height: 500px; margin-bottom: 20px;" ></div>
 
 
-I've been in professional software development for over  4  years. In the  past  year I've mostly been in an architect/leader role.
+I've been in professional software development for over 4 years. In the past  year I've mostly been in an architect/leader role. 
+I'm interested in challenging and interesting projects and I primarily work with the .NET platform.
 
-I like to work in an environment where I could put my skills into work and learn a lot. I want to constantly get better at what I know. I am also a believer of Agile software development process especially ***Scrum***.
+I am also a believer of Agile software development process especially ***Scrum***.
 
 
 <!-- amCharts javascript code -->
