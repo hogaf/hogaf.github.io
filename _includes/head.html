@@ -1,4 +1,4 @@
-﻿<head>
+<head>
 <meta charset="utf-8">
 <title>{% if page.title %}{{ page.title | upcase }} &#8211; {% endif %}{{ site.title | upcase }}</title>
 {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %}
@@ -31,8 +31,7 @@
 <link rel="stylesheet" href="{{ site.url }}/assets/css/post.css">
 <link rel="stylesheet" href="{{ site.url }}/assets/css/post-cover.css">
 <link rel="stylesheet" href="{{ site.url }}/assets/css/additional.css">
-<link rel="stylesheet" href="{{ site.url }}/assets/css/code.css">
-{% if site.nprogress %}<link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/nprogress.css">{% endif %}
+<link rel="stylesheet" href="{{ site.url }}/assets/css/code.css">{% if site.nprogress %}<link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/nprogress.css">{% endif %}
 
 <!-- Modernizr -->
 <script src="{{ site.url }}/assets/js/vendor/modernizr.js"></script>
@@ -46,6 +45,7 @@
 {% if page.mathjax %}
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script>MathJax.Hub.Config({config:["MMLorHTML.js"],extensions:["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],jax:["input/TeX"],tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["\\[","\\]"]],processEscapes:false},TeX:{TagSide:"right",TagIndent:".8em",MultLineWidth:"85%",equationNumbers:{autoNumber:"AMS",},unicode:{fonts:"STIXGeneral,'Arial Unicode MS'"}},showProcessingMessages:false});</script>{% endif %}
+
 <!-- Icons -->
 <!-- 16x16 -->
 <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
