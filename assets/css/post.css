@@ -211,7 +211,7 @@ html, body, .notepad-post-container, .notepad-post-header {
         font-weight: 300; }
       @media only screen and (min-width: 40.063em) {
         .post-template .notepad-post-content > div:not(.notepad-post-title) p {
-          font-size: 1.375rem; }
+          font-size: 1.175rem; }
           .post-template .notepad-post-content > div:not(.notepad-post-title) p:nth-of-type(1) {
             font-size: 1.175rem; } }
       .post-template .notepad-post-content > div:not(.notepad-post-title) p.with-image {
