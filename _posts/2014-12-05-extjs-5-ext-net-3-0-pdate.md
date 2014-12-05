@@ -19,7 +19,8 @@ published: true
 
 As I promised in the previous [post]({% post_url 2014-11-20-ext-net-2-5-3-pdate %}), the Extjs 5 
 and the Ext.Net 3.0.0 persian date is now available [here](https://github.com/hogaf/Hogaf.ExtNet3.UX). 
-I've made some changes to the original pdate javascript files so it now is compatible with Extjs 5.
+I've made some changes to the original pdate javascript files which are a part of [Vahid's](https://github.com/vahid-sohrabloo/Ext.Pdate) awsome job,
+ so it's now compatible with Extjs 5.
 
 *If you are a javascript guy you can just copy pdate related .js files into your working repository.*
 
