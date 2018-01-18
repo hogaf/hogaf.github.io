@@ -39,8 +39,8 @@
 <script>/*<![CDATA[*/window.jQuery||document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.11.1.min.js"><\/script>');/*]]>*/</script>{% endif %}
 {% if page.chart %}
 <script type="text/javascript" src="{{ site.url }}/assets/js/vendor/amcharts.js"></script>
-{% if page.charttype == 'pie' %}<script type="text/javascript" src="http://cdn.amcharts.com/lib/3/pie.js"></script>{% endif %}
-{% if page.charttype == 'serial' %}<script type="text/javascript" src="http://cdn.amcharts.com/lib/3/serial.js"></script>{% endif %}
+{% if page.charttype == 'pie' %}<script type="text/javascript" src="{{ site.url }}/assets/js/vendor/pie.js"></script>{% endif %}
+{% if page.charttype == 'serial' %}<script type="text/javascript" src="{{ site.url }}/assets/js/vendor/serial.js"></script>{% endif %}
 {% endif %}
 {% if page.mathjax %}
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>

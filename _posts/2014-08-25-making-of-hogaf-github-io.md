@@ -3,7 +3,7 @@ layout: post
 title: Making of hogaf.github.io
 description: "The journey of designing & coding this site"
 modified: "2014-11-13 12:54:46 +0300"
-category: [webdevelopment, jekyll]
+category: [jekyll]
 tags: 
   - design
   - github

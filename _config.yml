@@ -7,7 +7,7 @@ share:            true
 readtime:		  false
 wpm:			  #
 dropcap:		  true
-theme:			  blue
+#theme:			  blue
 nprogress:        true
 header_bg:        newyork-streets.jpg
 author_bg:		  newyork.jpg
@@ -16,6 +16,7 @@ author_bg:		  newyork.jpg
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
 url:              ' '
 
+plugins: [jekyll-paginate]
 # Owner/author information
 owner:
   name:           Hossein Abdolghafar
@@ -69,14 +70,14 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: false
+  enable_coderay: false
 
-  coderay:
-    coderay_line_numbers: 
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+  syntax_highlighter_opts:
+    line_numbers: 
+    line_numbers_start: 1
+    tab_width: 4
+    bold_every: 10
+    css: class
 
 prose:
   siteurl: 'http://hogaf.github.io/'

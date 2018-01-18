@@ -260,7 +260,6 @@ header, main, footer {
     .notepad-content .notepad-index-post .notepad-post-header .notepad-post-title {
       color: #000;
       font-weight: 700;
-      text-transform: uppercase;
       text-align: center;
       font-size: 1.625rem;
       margin: 0;
